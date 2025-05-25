@@ -23,6 +23,7 @@ RM556242 - Giovanna Laturague Bueno
   "senha": "123456",
   "role": "MECANICO"
 }
+```
 - `POST /login`: Autentica o usuário e retorna o token JWT.
 ```json
 {
@@ -45,6 +46,7 @@ RM556242 - Giovanna Laturague Bueno
 }
 ```
 - Mecanicos também conseguem deletar ou editar uma moto.
+- Mecanicos conseguem ver todas as motos registradas, independente de seu estado.
 
 ### 📅 Aluguéis (`/alugueis`)
 
