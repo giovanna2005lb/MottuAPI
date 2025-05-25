@@ -2,7 +2,7 @@
 📌 Nota: Projeto desenvolvido para fins acadêmicos na disciplina de Java Advanced
 API REST para gerenciamento de aluguel de motos, com autenticação baseada em JWT, controle de acesso por perfil (cliente e mecânico), cache e paginação.
 
-##Integrantes
+## Integrantes
 RM555679 - Lavinia Soo Hyun Park
 
 RM556242 - Giovanna Laturague Bueno
@@ -29,6 +29,7 @@ RM556242 - Giovanna Laturague Bueno
   "email": "mecanico@email.com",
   "password": "123456"
 }
+```
 
 ### 🛵 Motos
 - `POST /motos`: Registra uma moto.
@@ -42,6 +43,8 @@ RM556242 - Giovanna Laturague Bueno
   "ano": 2023,
   "precoPorDia": 89.90
 }
+```
+- Mecanicos também conseguem deletar ou editar uma moto.
 
 ### 📅 Aluguéis (`/alugueis`)
 
@@ -56,7 +59,14 @@ RM556242 - Giovanna Laturague Bueno
   "dataInicio": "2025-05-30",
   "dataFim": "2025-06-05"
 }
+```
+- Clientes podem reagendar (Editar) ou cancelar (apagar) um aluguel.
+- Quando o cliente aluga uma moto, ela muda para o estado de "ALUGADA"
 
+## ▶️ Como Executar
+```bash
+./mvnw spring-boot:run
+```
 ## Tecnologias Utilizadas
 
 - Java 17
