@@ -76,7 +76,6 @@ RM556242 - Giovanna Laturague Bueno
 - Spring Security
 - Spring Data JPA
 - JWT (JSON Web Token)
-- Oracle Database
 - Cache com Spring (`@Cacheable`, `@CacheEvict`)
 - Validações com Bean Validation (Jakarta)
 - Maven
